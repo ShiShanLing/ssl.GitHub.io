@@ -1,0 +1,15 @@
+<p>header works!</p>
+
+
+<p class="data-p">{{placeholder}}</p>
+
+<form (ngSubmit)="(dataInput.value != '')?addData():null">
+  <input #dataInput class="data-input"
+         name="dataInput"
+         [(ngModel)]="placeholder"
+  >
+  <button [hidden]="true" class="form-submit"></button>
+</form>
+
+
+

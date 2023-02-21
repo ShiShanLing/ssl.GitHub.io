@@ -1,0 +1,19 @@
+<nav>
+  <p>todo-list works!</p>
+  <app-header id="todo_header"></app-header>
+  <ul class="test_list" *ngFor="let str of undoList">
+    <li id="test_li"><a id="test_a" [routerLink]='"/"+str'>{{str}}</a></li>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+  </ul>
+
+  <button (click)="getValue()">点击test1</button>
+  <p>{{router.url}}</p>
+</nav>
+
+<router-outlet></router-outlet>
+
+
